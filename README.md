@@ -1,5 +1,7 @@
-### Universidad de Chile → Diseño, mención Diseño Gráfico
-#### Seminario Gráfica Computacional I 2018 → Segundo Semestre
+### Universidad de Chile
+### Diseño, mención Diseño Gráfico
+#### Seminario Gráfica Computacional I 2018
+##### Segundo Semestre
 
 **Visualización de datos** → Desde el análisis práctico de tres herramientas, cada estudiante podrá idear, fabricar y validar prototipos de aplicaciones o instalaciones para la visualización de datos relevantes para su Seminario de Diseño Gráfico o, por adelantado, para su Investigación Base de Memoria.
 
