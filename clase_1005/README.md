@@ -32,6 +32,6 @@ Cerramos con la creación de un repositorio en GitHub, con instrucciones para ap
 
 ------
    
-  1. Los puntos por asistencia consideran el llegar (1 pto.) y llegar a la hora que te permita aprovechar la clase (1 pto.)
+  1. Los puntos por asistencia consideran "el llegar" (1 pto.) y "el llegar a la hora para aprovechar la clase" (1 pto.).
   
   2. Los puntos por ejercicio consideran la creación del repositorio (1pto.), poner en ese repositorio los contenidos correspondientes (1 pto.) y la configuración de GitHub Pages (1 pto.) 
