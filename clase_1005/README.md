@@ -18,7 +18,7 @@ Para ejercitar con variables, aprovechamos un la página HTML contenida en este 
 
 Cerramos con la creación de un repositorio en GitHub, con instrucciones para aprovechar GitHub Pages.
 
-#### Puntos
+### Puntos
 
 | Nombre           | Asistencia <sup>1</sup> | Ejercicio <sup>2</sup> |
 |:-----------------|:---:|:---:|
