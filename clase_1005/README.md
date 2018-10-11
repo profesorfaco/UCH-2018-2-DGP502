@@ -16,7 +16,7 @@ Desde tal estructura nos pudimos conectar con [JSON](https://www.json.org/json-e
 
 Para ejercitar con variables, aprovechamos un la página HTML contenida en este repositorio. 
 
-Cerramos con la creación de un repositorio en GitHub, con instrucciones para aprovechar GitHub Pages.
+Cerramos con la creación de un repositorio en GitHub, con [instrucciones para aprovechar GitHub Pages](https://youtu.be/bFVtrlyH-kc).
 
 ### Puntos
 
