@@ -1,0 +1,36 @@
+[
+	{
+		"user":"brauliocardenas",
+		"day": 24,
+		"month": 7,
+		"age": 22
+	},
+
+	{
+		"user":"barbarajs",
+		"day": 7,
+		"month": 11,
+		"age": 22
+	},
+
+	{
+		"user":"PowerPudu",
+		"day": 19,
+		"month": 8,
+		"age": 24
+	},
+
+	{
+		"user":"tshelly",	
+		"day": 19,
+		"month": 1,
+		"age": 22
+	},
+
+	{
+		"user":"luissalazarfigueroa",
+		"day": 23,
+		"month": 7,
+		"age": 24
+	}
+]
