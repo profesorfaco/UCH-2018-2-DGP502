@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Los meta datos que no pueden faltar -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="esta página trata de…">
+    <!-- Incluyo el CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Esto aparece en la pestaña</title>
+  </head>
+  <body>
+    
+    <div class="container">
+    	<div class="row">
+    		<div class="col py-5">
+		    	<p>Con esto metemos el ciclo for, para que vaya a buscar todos los datos:</p>
+			</div>
+		</div>
+    </div>
+    <div id="pifaiv"></div>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+		<!--Lo que sigue es algo de p5.js, otra biblioteca de JavaScript-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+		<script>
+			var birth;
+			function preload() {
+				birth = loadJSON('https://raw.githubusercontent.com/profesorfaco/DGP502-2018/gh-pages/clase_1011/data/data-curso.json');
+			}
+
+			function setup() {
+				var canvas = createCanvas(windowWidth, 300);
+				canvas.parent('pifaiv');
+				smooth();
+				noLoop();
+				noStroke();
+				console.log(birth);
+			}
+			
+			function draw() {
+				background(240);
+
+for (var a = 0; a < 7; a++){				
+
+if(birth[a].age < 24){ 
+	fill(0,175,100);
+} else if (birth[a].age > 29) {
+	fill(255,0,0);
+} else {
+	fill(0);
+}
+ellipse((windowWidth/8)*(a+1),height/2,birth[a].age*2,birth[a].age*2);
+textAlign(CENTER);
+text(birth[a].user,(windowWidth/8)*(a+1),height/2+50)
+}
+}
+			
+			function windowResized() {
+  				resizeCanvas(windowWidth, 300);
+			}
+		</script>
+  </body>
+</html>
