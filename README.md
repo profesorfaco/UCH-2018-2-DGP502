@@ -21,26 +21,26 @@ El *análisis práctico*, atenderá a las siguientes condiciones:
 
 ##### p5.js
 
-- Clase 1: [viernes 5 de octubre](https://github.com/profesorfaco/DGP502-2018/tree/gh-pages/clase_1005)
-- Clase 2: [viernes 12 de octubre](https://github.com/profesorfaco/DGP502-2018/tree/gh-pages/clase_1011)
-- Clase 3: viernes 19 de octubre
-- Clase 4: viernes 26 de octubre
+- Clase 1 → [viernes 5 de octubre](https://github.com/profesorfaco/DGP502-2018/tree/gh-pages/clase_1005)
+- Clase 2 → [viernes 12 de octubre](https://github.com/profesorfaco/DGP502-2018/tree/gh-pages/clase_1011)
+- Clase 3 → viernes 19 de octubre
+- Clase 4 → viernes 26 de octubre
 
 ##### Processing
 
-- Clase 5: viernes 9 de noviembre
-- Clase 6: viernes 16 de noviembre
-- Clase 7: viernes 23 de noviembre
+- Clase 5 → viernes 9 de noviembre
+- Clase 6 → viernes 16 de noviembre
+- Clase 7 → viernes 23 de noviembre
 
 ##### Arduino
 
-- Clase 8: viernes 30 de noviembre
-- Clase 9: viernes 7 de diciembre
-- Clase 10: viernes 14 de diciembre
+- Clase 8 → viernes 30 de noviembre
+- Clase 9 → viernes 7 de diciembre
+- Clase 10 → viernes 14 de diciembre
 
 ##### Integración y aplicación
 
-- Clase 11: viernes 21 de diciembre
-- Clase 12: viernes 28 de diciembre
-- Clase 13: viernes 4 de enero
-- Clase 14: viernes 11 de enero
+- Clase 11 → viernes 21 de diciembre
+- Clase 12 → viernes 28 de diciembre
+- Clase 13 → viernes 4 de enero
+- Clase 14 → viernes 11 de enero
