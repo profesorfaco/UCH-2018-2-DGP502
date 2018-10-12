@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+   <head>
+      <!-- Los meta datos que no pueden faltar -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="esta página trata de…">
+      <!-- Incluyo el CSS de Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <title>Esto aparece en la pestaña</title>
+   </head>
+   <body>
+      <!--Lo que sigue es algo de p5.js, otra biblioteca de JavaScript-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+      <script>
+         var data;
+         function preload() {
+         	data = loadTable('https://raw.githubusercontent.com/profesorfaco/DGP502-2018/gh-pages/clase_1011/data/data-poblacion.csv','csv', 'header');
+         }
+         function setup() {
+         	console.log(data);
+         	console.log(data.getRowCount() + ' son las filas en la tabla');
+         	console.log(data.getColumnCount() + ' son las columnas en la tabla');
+         	var canvas = createCanvas(windowWidth, windowHeight);
+         	canvas.position(0,0);
+         	canvas.style('z-index','-1');
+         	noStroke();
+         	fill(0,150);
+         	textAlign(CENTER);
+         	textStyle(BOLD);	
+         	beginShape();
+         	vertex(0,height)
+            	for (var a = 0; a < data.getRowCount(); a++) {
+         		var habitantes = data.get(a, 1);
+         		var posX = (windowWidth/(data.getRowCount()+1))*(a+1);
+         		var posY = map(habitantes, 0, 7112808, (windowHeight-50), 100);
+         		vertex(posX,posY);
+            		var region = data.get(a, 0);
+            		textSize(11);
+            		text(region + '\n•',posX,posY-10);
+         	}
+         	vertex(width,height);
+         	endShape(CLOSE);
+         }
+         
+         function windowResized() {
+           	resizeCanvas(windowWidth, windowHeight);
+         }		
+      </script>
+   </body>
+</html>
