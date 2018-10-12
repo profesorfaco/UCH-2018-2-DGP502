@@ -2,7 +2,7 @@
 
 Partimos con un repaso sobre [variables en programación](https://librosweb.es/libro/javascript/capitulo-3/variables.html), con énfasis en [tipos de variables en JavaScript](https://librosweb.es/libro/javascript/capitulo-3/tipos-de-variables.html) y algunas comparaciones con las [variables en Java](https://users.dcc.uchile.cl/~lmateu/Java/Apuntes/tiposprim.htm) (estas comparaciones nos servirán más adelante, cuando trabajemos con [Processing](https://github.com/profesorfaco/DGP502-2018/wiki/Processing) y [Arduino](https://github.com/profesorfaco/DGP502-2018/wiki/Arduino)).
 
-En el repaso llegamos a las variables que pueden tener la siguiente estructura: 
+En el repaso llegamos a las variables que pueden tener la siguiente estructura de contenido: 
 
 ```
 var frutas = {
