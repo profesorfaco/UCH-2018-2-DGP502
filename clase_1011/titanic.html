@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Sketching</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+<script>
+//globales
+var data, n;
+var vives = 0, muertes = 0;
+var mujeres_vivas = 0, mujeres_muertas = 0;
+var mujeres_vivas_primera = 0, mujeres_vivas_segunda = 0 , mujeres_vivas_tercera = 0;
+var mujeres_muertas_primera = 0, mujeres_muertas_segunda = 0 , mujeres_muertas_tercera = 0;
+var hombres_vivos = 0, hombres_muertos = 0;
+var hombres_vivos_primera = 0, hombres_vivos_segunda = 0 , hombres_vivos_tercera = 0;
+var hombres_muertos_primera = 0, hombres_muertos_segunda = 0 , hombres_muertos_tercera = 0;
+//voy a buscar el CSV
+function preload() {
+	data = loadTable('https://raw.githubusercontent.com/profesorfaco/DGP502-2018/gh-pages/clase_1011/data/data-titanic.csv','csv', 'header');
+}
+//esto se carga una vez
+function setup() {
+	console.log(data);
+	n = data.getRowCount();
+	//conteo de vivos y muertos
+	for (var a = 0; a < n; a++) {
+		if (data.get(a, 1) == 1){ vives++ } else { muertes++ }
+	}
+	//conteo de vivas, muertas, vivos y muertos
+	for (var b = 0; b < n; b++) {
+		if (data.get(b, 1) == 0 && data.get(b,5) == "female"){ 
+			mujeres_muertas++ 
+		} else if (data.get(b, 1) == 1 && data.get(b,5) == "female"){ 
+			mujeres_vivas++ 
+		} else if (data.get(b, 1) == 0 && data.get(b,5) == "male"){
+			hombres_muertos++
+		} else if (data.get(b, 1) == 1 && data.get(b,5) == "male"){
+			hombres_vivos++
+		}
+	}
+	//conteo de vivas, muertas, vivos y muertos según clase
+	for (var c = 0; c < n; c++) {
+		if (data.get(c, 1) == 0 && data.get(c,5) == "female" && data.get(c,2) == 3){ 
+			mujeres_muertas_tercera++ 
+		} else if (data.get(c, 1) == 0 && data.get(c,5) == "female" && data.get(c,2) == 2){ 
+			mujeres_muertas_segunda++  
+		} else if (data.get(c, 1) == 0 && data.get(c,5) == "female" && data.get(c,2) == 1){
+			mujeres_muertas_primera++
+		} else if (data.get(c, 1) == 1 && data.get(c,5) == "female" && data.get(c,2) == 3){ 
+			mujeres_vivas_tercera++ 
+		} else if (data.get(c, 1) == 1 && data.get(c,5) == "female" && data.get(c,2) == 2){
+			mujeres_vivas_segunda++
+		} else if (data.get(c, 1) == 1 && data.get(c,5) == "female" && data.get(c,2) == 1){
+			mujeres_vivas_primera++
+		} else if (data.get(c, 1) == 0 && data.get(c,5) == "male" && data.get(c,2) == 3){ 
+			hombres_muertos_tercera++ 
+		} else if (data.get(c, 1) == 0 && data.get(c,5) == "male" && data.get(c,2) == 2){ 
+			hombres_muertos_segunda++  
+		} else if (data.get(c, 1) == 0 && data.get(c,5) == "male" && data.get(c,2) == 1){
+			hombres_muertos_primera++
+		} else if (data.get(c, 1) == 1 && data.get(c,5) == "male" && data.get(c,2) == 3){ 
+			hombres_vivos_tercera++ 
+		} else if (data.get(c, 1) == 1 && data.get(c,5) == "male" && data.get(c,2) == 2){
+			hombres_vivos_segunda++
+		} else if (data.get(c, 1) == 1 && data.get(c,5) == "male" && data.get(c,2) == 1){
+			hombres_vivos_primera++
+		}
+	}
+	console.log("de un total de " + n + " tripulantes")
+	console.log("sobrevivieron: " + vives);
+	console.log("murieron : " + muertes);
+	var canvas = createCanvas(windowWidth,windowHeight);
+	canvas.position(0,0);
+	canvas.style('z-index','-1');
+	noLoop();
+}
+//esto se dibujaría una y otra vez, pero no anulé el loop (noLoop).
+function draw(){
+	textAlign(CENTER);
+	rectMode(CENTER);
+	//TOTAL	
+	fill(100);
+	textSize(Math.round(n/7))
+	text(n,(width/2),(height/6)*2);
+	textSize(14)
+	text("TRIPULANTES",(width/2), ((height/6)*2)+70, 70,100);
+	//VIVOS Y MUERTOS
+	//Vives
+	fill(100);
+	textSize(Math.round(vives/7))
+	text(vives,(width/16)*4,(height/6)*3);
+	textSize(14)
+	text("SOBREVIVEN",(width/16)*4, ((height/6)*3)+60, 70,100);
+	//Muertes
+	fill(70,150,190);	
+	textSize(Math.round(muertes/5))
+	text(muertes,(width/16)*12,(height/6)*3);
+	textSize(14)
+	text("MUEREN",(width/16)*12, ((height/6)*3)+60, 70,100);	
+	//VIVOS Y MUERTOS, SEGÚN GÉNERO
+	//Mujeres vivas
+	fill(100);	
+	textSize(Math.round(mujeres_vivas/5))
+	text(mujeres_vivas,(width/16)*2,(height/6)*4);
+	textSize(13)
+	text("MUJERES",(width/16)*2, ((height/6)*4)+60, 70,100);
+	//Hombres vivos
+	fill(100);	
+	textSize(Math.round(hombres_vivos/5))
+	text(hombres_vivos,(width/16)*6,(height/6)*4);
+	textSize(13)
+	text("HOMBRES",(width/16)*6, ((height/6)*4)+60, 70,100);	
+	//Mujeres muertas
+	fill(70,150,190);	
+	textSize(Math.round(mujeres_muertas/5))
+	text(mujeres_muertas,(width/16)*10,(height/6)*4);
+	textSize(13)
+	text("MUJERES",(width/16)*10, ((height/6)*4)+60, 70,100);
+	//Hombres muertos
+	fill(70,150,190);	
+	textSize(Math.round(hombres_muertos/5))
+	text(hombres_muertos,(width/16)*14,(height/6)*4);
+	textSize(13)
+	text("HOMBRES",(width/16)*14, ((height/6)*4)+60, 70,100);	
+	//VIVOS Y MUERTOS, SEGÚN GÉNERO Y CLASE
+	//Mujeres vivas en primera clase
+	fill(150);	
+	textSize(12+Math.round(mujeres_vivas_primera*0.1))
+	text(mujeres_vivas_primera,(width/16),(height/7)*6);
+	textSize(9)
+	text("PRIMERA CLASE",(width/16), ((height/7)*6)+60, 70,100);
+	//Mujeres vivas en segunda clase
+	fill(150);	
+	textSize(12+Math.round(mujeres_vivas_segunda*0.1))
+	text(mujeres_vivas_segunda,(width/16)*2,(height/7)*6);
+	textSize(9)
+	text("SEGUNDA CLASE",(width/16)*2, ((height/7)*6)+60, 70,100);
+	//Mujeres vivas en tercera clase
+	fill(150);	
+	textSize(12+Math.round(mujeres_vivas_tercera*0.1))
+	text(mujeres_vivas_tercera,(width/16)*3,(height/7)*6);
+	textSize(9)
+	text("TERCERA CLASE",(width/16)*3, ((height/7)*6)+60, 70,100);
+	//Hombres vivos en primera clase
+	fill(150);	
+	textSize(12+Math.round(hombres_vivos_primera*0.1))
+	text(hombres_vivos_primera,(width/16)*5,(height/7)*6);
+	textSize(9)
+	text("PRIMERA CLASE",(width/16)*5, ((height/7)*6)+60, 70,100);
+	//Hombres vivos en segunda clase
+	fill(150);	
+	textSize(12+Math.round(hombres_vivos_segunda*0.1))
+	text(hombres_vivos_segunda,(width/16)*6,(height/7)*6);
+	textSize(9)
+	text("SEGUNDA CLASE",(width/16)*6, ((height/7)*6)+60, 70,100);
+	//Hombres vivos en segunda clase
+	fill(150);	
+	textSize(12+Math.round(hombres_vivos_tercera*0.1))
+	text(hombres_vivos_tercera,(width/16)*7,(height/7)*6);
+	textSize(9)
+	text("TERCERA CLASE",(width/16)*7, ((height/7)*6)+60, 70,100);
+	//Mujeres muertas en primera clase
+	fill(70,150,190);	
+	textSize(12+Math.round(mujeres_muertas_primera*0.1))
+	text(mujeres_muertas_primera,(width/16)*9,(height/7)*6);
+	textSize(9)
+	text("PRIMERA CLASE",(width/16)*9, ((height/7)*6)+60, 70,100);
+	//Mujeres muertas en segunda clase
+	fill(70,150,190);	
+	textSize(12+Math.round(mujeres_muertas_segunda*0.1))
+	text(mujeres_muertas_segunda,(width/16)*10,(height/7)*6);
+	textSize(9)
+	text("SEGUNDA CLASE",(width/16)*10, ((height/7)*6)+60, 70,100);
+	//Mujeres muertas en tercera clase
+	fill(70,150,190);	
+	textSize(12+Math.round(mujeres_muertas_tercera*0.1))
+	text(mujeres_muertas_tercera,(width/16)*11,(height/7)*6);
+	textSize(9)
+	text("TERCERA CLASE",(width/16)*11, ((height/7)*6)+60, 70,100);
+	//Hombres muertos en primera clase
+	fill(70,150,190);	
+	textSize(12+Math.round(hombres_muertos_primera*0.1))
+	text(hombres_muertos_primera,(width/16)*13,(height/7)*6);
+	textSize(9)
+	text("PRIMERA CLASE",(width/16)*13, ((height/7)*6)+60, 70,100);
+	//Hombres muertos en segunda clase
+	fill(70,150,190);	
+	textSize(12+Math.round(hombres_muertos_segunda*0.1))
+	text(hombres_muertos_segunda,(width/16)*14,(height/7)*6);
+	textSize(9)
+	text("SEGUNDA CLASE",(width/16)*14, ((height/7)*6)+60, 70,100);
+	//Hombres muertos en segunda clase
+	fill(70,150,190);	
+	textSize(12+Math.round(hombres_muertos_tercera*0.1))
+	text(hombres_muertos_tercera,(width/16)*15,(height/7)*6);
+	textSize(9)
+	text("TERCERA CLASE",(width/16)*15, ((height/7)*6)+60, 70,100);
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
