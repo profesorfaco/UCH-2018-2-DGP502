@@ -11,8 +11,8 @@ Cerramos con la creación de un repositorio en GitHub, con [instrucciones para a
 | Nombre | Asistencia <sup>1</sup> | Ejercicio <sup>2</sup> |
 |:-----------------|:---:|:---:|
 | Braulio Cárdenas | 2 | P | 
-| Camila Chocobar  | P | P | 
-| Bárbara Jeldes   | P | P | 
+| Camila Chocobar  | 1 | P | 
+| Bárbara Jeldes   | 1 | P | 
 | Bárbara Leal     | P | P | 
 | José Pedraza     | P | P |
 | Aracely Reinoso  | 2 | P | 
