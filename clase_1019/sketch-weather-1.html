@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Sketching</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+<div class="container">
+	<a class="navbar-brand" href="index.html">Sketching</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="sketch-money.html">Money</a></li>
+			<li class="nav-item"><a class="nav-link" href="sketch-desempleo.html">Desempleo</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://profesor.faco.cl" id="primer_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Weather</a>
+            <div class="dropdown-menu" aria-labelledby="primer_dropdown">
+              <a class="dropdown-item active" href="sketch-weather-1.html">Easy</a>
+              <a class="dropdown-item" href="sketch-weather-2.html">Select</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://profesor.faco.cl" id="segundo_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Earthquake</a>
+            <div class="dropdown-menu" aria-labelledby="segundo_dropdown">
+              <a class="dropdown-item" href="sketch-earthquake-1.html">M4.5+ Earthquakes</a>
+              <a class="dropdown-item" href="sketch-earthquake-2.html">20 Largest Earthquakes</a>
+            </div>
+          </li>
+			<li class="nav-item"><a class="nav-link" href="sketch-titanic.html">Titanic</a></li>
+		</ul>
+	</div>
+</div>
+</nav>	
+<div class="container pt-5">
+	<div class="row justify-content-center">
+		<div class="col-sm-8">
+			<p class="p-2 text-muted">En este sketch aprovechamos los datos que me entrega la API de <a href="https://openweathermap.org/">OpenWeatherMapa</a>, para evitarnos problemas, es necesario que cada unx de ustedes se genere un usuario, y obtenga su propia API KEY.</p>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col pt-5" id="here"></div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+<script>
+var data;
+var apiKey = 'Ponga aquí su API KEY de openweathermap.org';
+
+function preload() {
+	data = loadJSON('https://api.openweathermap.org/data/2.5/weather?id=3530597' + '&units=metric&APPID=' + apiKey);
+}
+function setup() {
+	console.log(data);
+	var canvas = createCanvas(windowWidth, windowHeight);
+	canvas.position(0,0);
+	canvas.style('z-index','-1');
+	fill(155);
+	background(255)
+	textAlign(LEFT);
+	textSize(72);
+	text(Math.round(data.main.temp) + 'º C', 50, height-50);
+	textAlign(RIGHT);
+	textSize(24);
+	text(data.name + ', ' + data.sys.country, width-80, height-80);
+	textSize(16);
+	text('Viento: ' + data.wind.speed + ' km/hr, ' + data.wind.deg + 'º', width-80, height-50);
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

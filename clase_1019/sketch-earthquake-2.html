@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Sketching</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-white">
+<div class="container">
+	<a class="navbar-brand" href="index.html">Sketching</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="sketch-money.html">Money</a></li>
+			<li class="nav-item"><a class="nav-link" href="sketch-desempleo.html">Desempleo</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://profesor.faco.cl" id="primer_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Weather</a>
+            <div class="dropdown-menu" aria-labelledby="primer_dropdown">
+              <a class="dropdown-item" href="sketch-weather-1.html">Easy</a>
+              <a class="dropdown-item" href="sketch-weather-2.html">Select</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://profesor.faco.cl" id="segundo_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Earthquake</a>
+            <div class="dropdown-menu" aria-labelledby="segundo_dropdown">
+              <a class="dropdown-item" href="sketch-earthquake-1.html">M4.5+ Earthquakes</a>
+              <a class="dropdown-item active" href="sketch-earthquake-2.html">20 Largest Earthquakes</a>
+            </div>
+          </li>
+			<li class="nav-item"><a class="nav-link" href="sketch-titanic.html">Titanic</a></li>
+		</ul>
+	</div>
+</div>
+</nav>	
+<div class="container py-5">
+<div class="row justify-content-center">
+		<div class="col">
+			<h1>20 Largest Earthquakes</h1>
+			<p class="text-muted">A propósito de los <a href="https://earthquake.usgs.gov/earthquakes/browse/largest-world.php">20 mayores temblores registrados en la historia</a>, aprovecho de compartirles un truco de las Hojas de Cálculo de Google: Si necesitan copiar una tabla desde un sitio web, basta con que incluyan el siguiente código en la primera casilla de la Hoja: <code>=ImportHTML("La URL";"table";1)</code>. Eso fue lo que hice yo, para luego descargar esa Hoja como <a href="https://es.wikipedia.org/wiki/Valores_separados_por_comas">CSV</a>.</p>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+		<div class="col">
+			<div id="there" style="overflow-x:hidden"></div>
+		</div>
+	</div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+<script>
+var data;
+function preload() {
+	data = loadTable('https://raw.githubusercontent.com/profesorfaco/DGP502-2018/gh-pages/clase_1019/data/mag.csv','csv', 'header');
+}
+function setup() {
+	console.log(data);
+	console.log('Son ' + data.getRowCount() + ' filas en la tabla');
+	console.log('Son ' + data.getColumnCount() + ' columnas en la tabla');
+	//En este caso estoy dejando la altura dependiente de los ítem de lista
+	var canvas = createCanvas(windowWidth-30, 22*data.getRowCount());
+	//Además, estoy poniendo el canvas dentro de un elemento de identidad there
+	canvas.parent('there');
+	//Y le doy, mediante estilo, un fondo gris
+	canvas.style('background','#EEEEEE');
+	//muevo todo 10 pixeles hacia abajo
+   	translate(0,10);
+   	//ahora un loop para revisar todas las filas de la data
+   	for (var a = 0; a < data.getRowCount(); a++) {
+		//colores para tener a la vista a chilenos y sumatrinos
+		if (data.get(a, 1).indexOf("Chile") >= 0) { 
+			fill(200,0,100)
+		}
+   		else if (data.get(a, 1).indexOf("Sumatra") >= 0) { 
+			fill(0,100,200)
+		}
+   		else{
+   			fill(100)
+		}
+		//una condición para el nombre a desplegar
+		var nombre = data.get(a, 2);
+		if(nombre=='' || nombre.length >= 30){
+			var info = data.get(a,0)+' M.- '+ data.get(a, 1);
+		} else {
+			var info = +data.get(a,0)+' M.- '+ nombre;
+		}
+		//text
+		textSize(14);
+		//de la fecha, solo necesito el año
+		var year = splitTokens(data.get(a, 3), "-")[0];
+   		text(info + ' (' + year + ')',10,20*(a+1));
+	}
+	noStroke();
+}
+
+function draw() {}
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
