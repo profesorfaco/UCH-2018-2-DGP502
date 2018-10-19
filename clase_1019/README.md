@@ -10,7 +10,7 @@
 
 - Finalmente revisamos cómo es que p5.js puede ayudarnos a explorar documentos CSV, según determinadas condiciones.
 
-### URL
+### En GitHub Pages
 
 https://profesorfaco.github.io/DGP502-2018/clase_1019/
 
