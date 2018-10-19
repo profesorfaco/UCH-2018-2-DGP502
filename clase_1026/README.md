@@ -23,7 +23,7 @@ Las dimensiones del concepto de **"calidad de visualización de datos"**, son:
 https://profesorfaco.github.io/DGP502-2018/clase_1026/
 
 
-### Puntos por asistencia-puntualidad<sup>1</sup>
+### Puntos por asistencia-puntualidad
 
 | Nombre | Pts. |
 |:-----------------|:---:|
@@ -33,9 +33,4 @@ https://profesorfaco.github.io/DGP502-2018/clase_1026/
 | Bárbara Leal     | P |  
 | José Pedraza     | P | 
 | Aracely Reinoso  | P | 
-| Luis Salazar     | P | 
-
-------
-   
-  1. Los puntos por asistencia consideran "el llegar" (1 pto.) y "el llegar a la hora para aprovechar la clase" (1 pto.).
-  
+| Luis Salazar     | P |   
