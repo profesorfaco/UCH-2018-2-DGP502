@@ -1,14 +1,14 @@
 # Clase 3 → Viernes 19 de octubre
 
-**En esta clase avanzaremos en el trabajo de p5.js y datos**. Aprovecharemos una [API](https://es.wikipedia.org/wiki/Interfaz_de_programaci%C3%B3n_de_aplicaciones) que nos entrega datos en formato [JSON](https://www.json.org/json-es.html), tambien consultaremos a un sitio web que nos entregará información en el mismo formato, y también exploraremos un par de documentos [CSV](https://es.wikipedia.org/wiki/Valores_separados_por_comas):
+**En esta clase avanzamos en el trabajo de p5.js y datos**.
 
-- Para comenzar a trabajar, es necesario que cada estudiante tenga su cuenta de [OpenWeatherMap](https://openweathermap.org/), porque a cada cuenta se le asocia una API Key (que validará las consultas sobre el tiempo atmosférico alrededor del mundo).
+- Para comenzar a trabajar, cada estudiante obtuvo su cuenta de [OpenWeatherMap](https://openweathermap.org/), esto porque a cada cuenta se le asocia una *key* que permite usar la [API](https://es.wikipedia.org/wiki/Interfaz_de_programaci%C3%B3n_de_aplicaciones).
 
-- También trabajaremos con el servicio de [mindicador.cl](https://mindicador.cl/), que entrega los principales datos económicos del mercado nacional en formato JSON. En este caso no es necesario una *key*.
+- También trabajamos con el servicio de [mindicador.cl](https://mindicador.cl/), que entrega los principales datos económicos del mercado nacional en formato JSON. En este caso no es necesario una *key*.
 
-- Luego utilizaremos el [GeoJSON Summary Format de la USGS](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php), para obtener información detallada sobre temblores registrados en el mundo, con actualizaciones cada 5 minutos. La USGS tampoco solicita una *key*.
+- Luego utilizamos el [GeoJSON Summary Format de la USGS](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php), para obtener información detallada sobre temblores registrados en el mundo, con actualizaciones cada 5 minutos. La USGS tampoco solicita una *key*.
 
-- Finalmente revisaremos cómo es que p5.js puede ayudarnos a explorar documentos CSV, según determinadas condiciones.
+- Finalmente revisamos cómo es que p5.js puede ayudarnos a explorar documentos CSV, según determinadas condiciones.
 
 ### URL
 
