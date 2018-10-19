@@ -23,8 +23,8 @@ El *análisis práctico*, atenderá a las siguientes condiciones:
 
 - Clase 1 → [viernes 5 de octubre](https://github.com/profesorfaco/DGP502-2018/tree/gh-pages/clase_1005)
 - Clase 2 → [viernes 12 de octubre](https://github.com/profesorfaco/DGP502-2018/tree/gh-pages/clase_1011)
-- Clase 3 → viernes 19 de octubre
-- Clase 4 → viernes 26 de octubre
+- Clase 3 → [viernes 19 de octubre](https://github.com/profesorfaco/DGP502-2018/tree/gh-pages/clase_1019)
+- Clase 4 → [viernes 26 de octubre](https://github.com/profesorfaco/DGP502-2018/tree/gh-pages/clase_1026)
 
 ##### Processing
 
