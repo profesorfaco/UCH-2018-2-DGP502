@@ -4,10 +4,15 @@
 
 - Para comenzar a trabajar, es necesario que cada estudiante tenga su cuenta de [OpenWeatherMap](https://openweathermap.org/), porque a cada cuenta se le asocia una API Key (que validará las consultas sobre el tiempo atmosférico alrededor del mundo).
 
-- Luego utilizaremos el [GeoJSON Summary Format de la USGS](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php), para obtener información sobre temblores en tiempo real. 
+- También trabajaremos con el servicio de [mindicador.cl](https://mindicador.cl/), que entrega los principales datos económicos del mercado nacional en formato JSON. En este caso no es necesario una *key*.
 
-- Finalmente revisaremos cómo es que p5.js puede ayudarnos a explorar documentos, según determinadas condiciones.
+- Luego utilizaremos el [GeoJSON Summary Format de la USGS](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php), para obtener información detallada sobre temblores registrados en el mundo, con actualizaciones cada 5 minutos. La USGS tampoco solicita una *key*.
 
+- Finalmente revisaremos cómo es que p5.js puede ayudarnos a explorar documentos CSV, según determinadas condiciones.
+
+### URL
+
+https://profesorfaco.github.io/DGP502-2018/clase_1019/
 
 ### Puntos
 
