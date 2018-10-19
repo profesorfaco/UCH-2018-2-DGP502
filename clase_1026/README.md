@@ -2,7 +2,7 @@
 
 ### Evaluación
 
-Hoy pondremos a prueba lo aprendido respecto de p5.js con un ejercicio exploratorio de visualización de datos. En este ejercicio cada estudiante debe generar un sitio web sobre un asunto específico, con 3 páginas interiores + 1 portada.
+Hoy pondremos a prueba lo aprendido respecto de p5.js, mediante un ejercicio exploratorio de visualización de datos. En este ejercicio cada estudiante debe generar un sitio web sobre un asunto específico, con 3 páginas interiores + 1 portada.
 
 La **nota 7,0** se logra mediante:
 
