@@ -1,10 +1,17 @@
 # Clase 2 → Viernes 11 de octubre
 
-Hoy comenzaremos a trabajar con [JSON](https://www.json.org/json-es.html) y [CSV](https://es.wikipedia.org/wiki/Valores_separados_por_comas) alimentando variables en scripts de p5.js
+Hoy comenzamos a trabajar con [JSON](https://www.json.org/json-es.html) y [CSV](https://es.wikipedia.org/wiki/Valores_separados_por_comas), alimentando variables en scripts de p5.js
 
-Para ejercitar con variables, aprovechamos un la página HTML contenida en este repositorio. 
+Para ejercitar con variables, aprovechamos las páginas HTML contenidas en este repositorio. 
 
-Cerramos con la creación de un repositorio en GitHub, con [instrucciones para aprovechar GitHub Pages](https://youtu.be/bFVtrlyH-kc).
+Y cerramos con la creación de un repositorio en GitHub, con [instrucciones para aprovechar GitHub Pages](https://youtu.be/bFVtrlyH-kc).
+
+### URLs
+
+- https://profesorfaco.github.io/DGP502-2018/clase_1011
+- https://profesorfaco.github.io/DGP502-2018/clase_1011/multi.html
+- https://profesorfaco.github.io/DGP502-2018/clase_1011/desafio.html
+- https://profesorfaco.github.io/DGP502-2018/clase_1011/otro.html
 
 ### Puntos
 
