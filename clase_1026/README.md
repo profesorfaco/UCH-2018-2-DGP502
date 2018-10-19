@@ -17,3 +17,7 @@ Las dimensiones del concepto de **"calidad de visualización de datos"**, son:
 - **profundidad temática** → lo que presenta cada visualización deriva de recolectar e integrar datos sobre el asunto específico con algo de rigor científico y nada de displicencia.
 - **excelencia tuftiana** → la visualización se resuelve con atención a tres conceptos de Edward Tufte: [Data-Ink Ratio](https://infovis-wiki.net/wiki/Data-Ink_Ratio), [Chart Junk](https://infovis-wiki.net/wiki/Chart_Junk) y [Lie Factor](https://infovis-wiki.net/wiki/Lie_Factor).
 - **claridad de la evidencia** → la visualización permite reconocer correlaciones y/o patrones, reconocimiento que, a su vez, permiten levantar una o varias hipótesis respecto del asunto específico del sitio web.
+
+### En GitHub Pages
+
+https://profesorfaco.github.io/DGP502-2018/clase_1026/
