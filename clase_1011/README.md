@@ -6,7 +6,7 @@ Para ejercitar con variables, aprovechamos las páginas HTML contenidas en este 
 
 Y cerramos con la creación de un repositorio en GitHub, con [instrucciones para aprovechar GitHub Pages](https://youtu.be/bFVtrlyH-kc).
 
-### URLs
+### En GitHub Pages
 
 - https://profesorfaco.github.io/DGP502-2018/clase_1011
 - https://profesorfaco.github.io/DGP502-2018/clase_1011/multi.html
