@@ -14,7 +14,7 @@ La **nota 7,0** se logra mediante:
 Las dimensiones del concepto de **"calidad de visualización de datos"**, son: 
 
 - **coherencia temática** → 0,5 → lo que presenta la visualización se conecta con aquello que presenta la anterior y/o la siguiente, en una relación intencionada, justificada y sugerente. 
-- **profundidad temática** → 0,5 → lo que presenta la visualización deriva de recolectar e integrar datos sobre el asunto específico con algo de rigor científico y nada de displicencia.
+- **profundidad temática** → 0,5 → lo que presenta la visualización deriva de recolectar e integrar datos sobre el asunto específico, con algo de rigor científico y nada de displicencia.
 - **evidencia intuitiva** → 0,5 → la visualización permite reconocer correlaciones y/o patrones; reconocimiento que, a su vez, permite levantar una o varias hipótesis respecto del asunto específico del sitio web.
 - **excelencia tuftiana** → 0,5 → la visualización se resuelve con atención a tres conceptos de Edward Tufte: [Data-Ink Ratio](https://infovis-wiki.net/wiki/Data-Ink_Ratio), [Chart Junk](https://infovis-wiki.net/wiki/Chart_Junk) y [Lie Factor](https://infovis-wiki.net/wiki/Lie_Factor).  
 
