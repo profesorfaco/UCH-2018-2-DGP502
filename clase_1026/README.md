@@ -22,6 +22,15 @@ Las dimensiones del concepto de **"calidad de visualización de datos"**, son:
 
 https://profesorfaco.github.io/DGP502-2018/clase_1026/
 
+### Podrían encontrar datos para visualizar en:
+
+- [Climate Change Knowledge Portal](http://sdwebx.worldbank.org/climateportal/index.cfm?page=downscaled_data_download&menu=historical)
+- [DataBank | World Development Indicators | Chile](http://databank.worldbank.org/data/reports.aspx?source=2&country=CHL)
+- **[DataChile](https://es.datachile.io/)**
+- [Google Dataset Search](https://toolbox.google.com/datasetsearch)
+- [Portal de Datos Abiertos | Gobierno de Chile](http://datos.gob.cl/dataset?q=&sort=metadata_modified+desc)
+- [UNICEF Data](https://data.unicef.org/country/chl/)
+
 
 ### Puntos por asistencia-puntualidad
 
