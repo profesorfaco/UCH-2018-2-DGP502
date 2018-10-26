@@ -37,10 +37,10 @@ https://profesorfaco.github.io/DGP502-2018/clase_1026/
 
 | Nombre | Pts. |
 |:-----------------|:---:|
-| Braulio Cárdenas | P | 
-| Camila Chocobar  | P | 
-| Bárbara Jeldes   | P |  
-| Bárbara Leal     | P |  
+| Braulio Cárdenas | 2 | 
+| Camila Chocobar  | 2 | 
+| Bárbara Jeldes   | 2 |  
+| Bárbara Leal     | 2 |  
 | José Pedraza     | P | 
-| Aracely Reinoso  | P | 
+| Aracely Reinoso  | 2 | 
 | Luis Salazar     | P |   
