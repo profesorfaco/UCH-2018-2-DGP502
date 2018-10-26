@@ -41,6 +41,6 @@ https://profesorfaco.github.io/DGP502-2018/clase_1026/
 | Camila Chocobar  | 2 | 
 | Bárbara Jeldes   | 2 |  
 | Bárbara Leal     | 2 |  
-| José Pedraza     | P | 
+| José Pedraza     | 0 | 
 | Aracely Reinoso  | 2 | 
-| Luis Salazar     | P |   
+| Luis Salazar     | 1 |   
