@@ -20,15 +20,24 @@ JavaScript y Java tienen semánticas y propósitos diferentes:
 
 -------
 
+### Apuntes de clase
+
+Podríamos usar Processing para desarrollar visualizaciones de datos tradicionales, como hace Nicholas Felton: [Feltron](http://feltron.com/), [Data Visualization with Nicholas Felton Using Processing](https://www.youtube.com/watch?v=7ZOpV0_cu9g), 
+
+Podríamos usar Processing para hacer arte generativo, como Casey Reas: [How to Draw With Code](https://www.youtube.com/watch?v=_8DMEHxOLQE)
+
+
+-------
+
 ### Puntos por asistencia-puntualidad
 
 | Nombre | Pts. |
 |:-----------------|:---:|
-| Braulio Cárdenas | P | 
-| Camila Chocobar  | P | 
-| Bárbara Jeldes   | P |  
-| Bárbara Leal     | P |  
-| José Pedraza     | P | 
+| Braulio Cárdenas | 0 | 
+| Camila Chocobar  | 0 | 
+| Bárbara Jeldes   | 0 |  
+| Bárbara Leal     | 0 |  
+| José Pedraza     | 0 | 
 | Aracely Reinoso  | 2 | 
-| Luis Salazar     | P |   
+| Luis Salazar     | 1 |   
 
