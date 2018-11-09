@@ -26,6 +26,9 @@ Podríamos usar Processing para desarrollar visualizaciones de datos tradicional
 
 Podríamos usar Processing para hacer arte generativo, como Casey Reas: [How to Draw With Code](https://www.youtube.com/watch?v=_8DMEHxOLQE)
 
+Entre uno y otro extremo, tenemos muchas posibiidades: https://www.openprocessing.org
+
+
 
 -------
 
