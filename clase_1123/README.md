@@ -1,4 +1,8 @@
-Generar 100 propuestas de portada para un Pelican Original de Penguin. 
+# Clase 7 → Viernes 23 de noviembre
+
+### Evaluación
+
+Hoy ponemos a prueba lo aprendido respecto de Processing, mediante un ejercicio de generación gráfica. Para esto corresponde generar 100 propuestas de portada para un Pelican Original de Penguin. 
 
 En la generación de estas propuestas debe:
 
@@ -10,8 +14,13 @@ En la generación de estas propuestas debe:
 
 - algunos de los Sketch deben permitir el dibujo libre, otros deben basarse en secuencias lógicas y otros deben utilizar datos duros.
 
-La carpeta contienen 3 ejemplos basados en esta portada:
-http://www.penguinfirsteditions.com/pel/A717.jpg
+- - - - - - 
+
+**Esta carpeta contienen 3 ejemplos basados en esta portada:**
+
+![On Justice in Society](http://www.penguinfirsteditions.com/pel/A717.jpg)
+
+- - - - - - 
 
 La portada fue obtenida de [Penguin First Editions](http://www.penguinfirsteditions.com/index.php?cat=pelican700-799)
 
