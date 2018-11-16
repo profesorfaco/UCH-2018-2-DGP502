@@ -2,21 +2,27 @@
 
 ### Evaluación
 
-Hoy ponemos a prueba lo aprendido respecto de Processing, mediante un ejercicio de generación gráfica. Para esto corresponde generar 100 propuestas de portada para un Pelican Original de Penguin. 
+Hoy ponemos a prueba lo aprendido respecto de Processing, mediante un ejercicio de generación gráfica. Para esto corresponde generar 100 propuestas de portada para un *Pelican Original* de *Penguin*. 
 
-En la generación de estas propuestas debe:
+La calificación máxima (7,0) se obtiene considerando:
 
-- replicar los elementos de un libro publicado por la editorial en tal serie: sello del pelícano, frase "a Pelican Original", nombre del libro, nombre del autor y, si las tuviera, líneas entre tales elementos.
+- **1,0** Punto base.
 
-- copiar colores y tipografía de tales elementos (fuente tipográfica, proporción de cuerpos y distribución)
+- **1,0** Punto máximo por la fidelidad con la que replica los elementos de un libro publicado por la editorial en tal serie: sello del pelícano, frase "a Pelican Original", nombre del libro, nombre del autor y, si las tuviera, líneas entre tales elementos.
 
-- modificar únicamente la ilustración, con distintos Sketch desarrollados en Processing
+- **1,0** Punto máximo por la fidelidad con la que replica colores y tipografía de tales elementos (fuente tipográfica, proporción de cuerpos tipográficos y diagramación)
 
-- algunos de los Sketch deben permitir el dibujo libre, otros deben basarse en secuencias lógicas y otros deben utilizar datos duros.
+- **1,0** Punto máximo por la calidad y variedad de las ilustraciones que resultan de los sketch desarrollados en Processing.
+
+- **1,0** Cantidad de entre 30 y 40 ilustraciones generadas por dibujo libre.
+
+- **1,0** Cantidad de entre 30 y 40 ilustraciones generadas por visualización de secuencias lógicas (más Casey Reas).
+
+- **1,0** Cantidad de entre 30 y 40 ilustraciones generadas por visualización de datos (más Nicolas Felton).
 
 - - - - - - 
 
-**Esta carpeta contienen 3 ejemplos basados en esta portada:**
+**Esta carpeta contienen ejemplo basado en esta portada:**
 
 ![On Justice in Society](http://www.penguinfirsteditions.com/pel/A717.jpg)
 
