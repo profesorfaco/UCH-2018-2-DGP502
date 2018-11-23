@@ -53,19 +53,20 @@
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-    var folder = "sketch_01/";
+    <script>    
 
-    $.ajax({
-        url : folder,
-        success: function (data) {
-            $(data).find("a").attr("href", function (i, val) {
-                if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-                    $("#dibujo").append( "<div class='col-sm-4 col-md-3'><img class='img-fluid' src='"+ folder + val +"'></div>" );
-                } 
-            });
-        }
-    });
+var dir = "sketch_01/";
+var fileextension = ".png";
+$.ajax({
+    url: dir,
+    success: function (data) {
+        //List all .png file names in the page
+        $(data).find("a:contains(" + fileextension + ")").each(function () {
+            var filename = this.href.replace(window.location.host, "").replace("http://", "");
+              $("#dibujo").append( "<div class='col-sm-4 col-md-3'><img class='img-fluid' src='"+ folder + val +"'></div>" );
+        });
+    }
+});        
     </script>
     <script>
     var folder = "sketch_02/";
