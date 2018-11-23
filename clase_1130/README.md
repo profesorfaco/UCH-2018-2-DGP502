@@ -2,7 +2,7 @@
 
 ### Arduino
 
-Comenzaremos a explorar Arduino. Para esto es necesario revisar: 
+**Comenzaremos a explorar Arduino**. Para esto es necesario revisar: 
 
 - IDE Arduino (muy parecida a la de IDE Processing)
 
@@ -10,7 +10,7 @@ Comenzaremos a explorar Arduino. Para esto es necesario revisar:
 
 - Lenguaje Arduino (derivado de [Wiring](http://wiring.org.co/))
 
-En la clase de hoy vamos usaremos: 
+En la clase de **hoy usaremos**: 
 
 - Una protoboard o breadboard: [¿Qué es un Protoboard?](http://www.circuitoselectronicos.org/2007/10/el-protoboard-tableta-de-experimentacin.html) · [What is a breadboard?](http://wiring.org.co/learning/tutorials/breadboard/index.html)
 
