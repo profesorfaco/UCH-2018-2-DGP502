@@ -28,9 +28,9 @@ El *análisis práctico*, atenderá a las siguientes condiciones:
 
 ##### Processing
 
-- Clase 5 → viernes 9 de noviembre
-- Clase 6 → viernes 16 de noviembre
-- Clase 7 → viernes 23 de noviembre
+- Clase 5 → [viernes 9 de noviembre](https://github.com/profesorfaco/DGP502-2018/tree/gh-pages/clase_1109)
+- Clase 6 → [viernes 16 de noviembre](https://github.com/profesorfaco/DGP502-2018/tree/gh-pages/clase_1116)
+- Clase 7 → [viernes 23 de noviembre](https://github.com/profesorfaco/DGP502-2018/tree/gh-pages/clase_1123)
 
 ##### Arduino
 
