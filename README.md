@@ -34,7 +34,7 @@ El *análisis práctico*, atenderá a las siguientes condiciones:
 
 ##### Arduino
 
-- Clase 8 → viernes 30 de noviembre
+- Clase 8 → [viernes 30 de noviembre](https://github.com/profesorfaco/DGP502-2018/tree/gh-pages/clase_1130)
 - Clase 9 → viernes 7 de diciembre
 - Clase 10 → viernes 14 de diciembre
 
